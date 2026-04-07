@@ -1,0 +1,40 @@
+ShelfLifeSentinel/
+│
+├── main.py                  # Entry point (runs the whole system)
+├── config.py                # Configuration (DB path, settings)
+│
+├── database/
+│   ├── db.py                # Database connection & queries
+│   ├── models.py            # Table structure (Product schema)
+│   └── products.db          # SQLite database file
+│
+├── modules/
+│   ├── scanner.py           # Barcode scanning / input
+│   ├── expiry_checker.py    # Expiry checking logic
+│   ├── billing.py           # Cart & billing system
+│   └── alerts.py            # Warning & messages
+│
+├── ui/
+│   ├── app.py               # Main UI (Tkinter / Flask)
+│   ├── screens.py           # Different UI screens
+│   └── styles.py            # UI styling (optional)
+│
+├── utils/
+│   ├── date_utils.py        # Date handling functions
+│   └── helpers.py           # Common helper functions
+│
+├── data/
+│   └── sample_products.json # Sample data (for testing)
+│
+├── tests/
+│   ├── test_expiry.py       # Test expiry logic
+│   └── test_db.py           # Test database
+│
+├── requirements.txt         # Libraries used
+├── README.md                # Project explanation
+└── run.sh / run.bat         # Script to run project
+\
+
+
+
+👉 Open Barcode Generator:https://rjl.io/barcode-generator/
